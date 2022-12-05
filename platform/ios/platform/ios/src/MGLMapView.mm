@@ -857,12 +857,9 @@ public:
     NSMutableArray *updatedConstraints = [NSMutableArray array];
     UIEdgeInsets inset = UIEdgeInsetsZero;
     
-    BOOL automaticallyAdjustContentInset;
+    BOOL automaticallyAdjustContentInset = false;
     if (_automaticallyAdjustContentInsetHolder) {
         automaticallyAdjustContentInset = _automaticallyAdjustContentInsetHolder.boolValue;
-    } else {
-        UIViewController *viewController = [self rootViewController];
-        automaticallyAdjustContentInset = viewController.automaticallyAdjustsScrollViewInsets;
     }
     
     if (! automaticallyAdjustContentInset) {
@@ -1090,25 +1087,11 @@ public:
 - (void)adjustContentInset
 {
     UIEdgeInsets adjustedContentInsets = UIEdgeInsetsZero;
-    UIViewController *viewController = [self rootViewController];
-    BOOL automaticallyAdjustContentInset;
-    if (@available(iOS 11.0, *))
-    {
-        adjustedContentInsets = self.safeAreaInsets;
-        
-    } else {
-        adjustedContentInsets.top = viewController.topLayoutGuide.length;
-        CGFloat bottomPoint = CGRectGetMaxY(viewController.view.bounds) -
-                                (CGRectGetMaxY(viewController.view.bounds)
-                                - viewController.bottomLayoutGuide.length);
-        adjustedContentInsets.bottom = bottomPoint;
-
-    }
+    BOOL automaticallyAdjustContentInset = FALSE;
+    adjustedContentInsets = self.safeAreaInsets;
     
     if (_automaticallyAdjustContentInsetHolder) {
         automaticallyAdjustContentInset = _automaticallyAdjustContentInsetHolder.boolValue;
-    } else {
-        automaticallyAdjustContentInset = viewController.automaticallyAdjustsScrollViewInsets;
     }
     
     self.safeMapViewContentInsets = adjustedContentInsets;
@@ -3089,18 +3072,18 @@ static void *windowScreenContext = &windowScreenContext;
     return _visibleRoadFeatures;
 }
 
-- (CGRect)accessibilityFrame
-{
-    CGRect frame = [super accessibilityFrame];
-    UIViewController *viewController = self.mgl_viewControllerForLayoutGuides;
-    if (viewController)
-    {
-        CGFloat topInset = viewController.topLayoutGuide.length;
-        frame.origin.y += topInset;
-        frame.size.height -= topInset + viewController.bottomLayoutGuide.length;
-    }
-    return frame;
-}
+//- (CGRect)accessibilityFrame
+//{
+//    CGRect frame = [super accessibilityFrame];
+//    UIViewController *viewController = self.mgl_viewControllerForLayoutGuides;
+//    if (viewController)
+//    {
+//        CGFloat topInset = viewController.topLayoutGuide.length;
+//        frame.origin.y += topInset;
+//        frame.size.height -= topInset + viewController.bottomLayoutGuide.length;
+//    }
+//    return frame;
+//}
 
 - (UIBezierPath *)accessibilityPath
 {

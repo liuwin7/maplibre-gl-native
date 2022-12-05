@@ -21,18 +21,7 @@
 }
 
 - (NSLayoutYAxisAnchor *)mgl_safeTopAnchor {
-    if (@available(iOS 11.0, *)) {
-        return self.safeAreaLayoutGuide.topAnchor;
-    } else {
-        UIViewController *viewController = self.mgl_viewControllerForLayoutGuides;
-        BOOL useLayoutGuides = viewController.view && viewController.automaticallyAdjustsScrollViewInsets;
-        if (useLayoutGuides) {
-            return viewController.topLayoutGuide.bottomAnchor;
-        }
-        else {
-            return self.topAnchor;
-        }
-    }
+    return self.safeAreaLayoutGuide.topAnchor;
 }
 
 - (NSLayoutXAxisAnchor *)mgl_safeLeadingAnchor {
@@ -44,18 +33,7 @@
 }
 
 - (NSLayoutYAxisAnchor *)mgl_safeBottomAnchor {
-    if (@available(iOS 11.0, *)) {
-        return self.safeAreaLayoutGuide.bottomAnchor;
-    } else {
-        UIViewController *viewController = self.mgl_viewControllerForLayoutGuides;
-        BOOL useLayoutGuides = viewController.view && viewController.automaticallyAdjustsScrollViewInsets;
-        if (useLayoutGuides) {
-            return viewController.bottomLayoutGuide.topAnchor;
-        }
-        else {
-            return self.bottomAnchor;
-        }
-    }
+    return self.safeAreaLayoutGuide.bottomAnchor;
 }
 
 - (NSLayoutXAxisAnchor *)mgl_safeTrailingAnchor {

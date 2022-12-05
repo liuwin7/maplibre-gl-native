@@ -2811,9 +2811,9 @@
 					};
 					DA1DC9491CB6C1C2006E619F = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = KBDAWM7T4E;
+						DevelopmentTeam = 2VT976F4CH;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					DA2E88501CC036F400F24E7B = {
 						CreatedOnToolsVersion = 7.3;
@@ -2826,6 +2826,7 @@
 					};
 					DA8933D41CCD306400E68420 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2VT976F4CH;
 					};
 					DAA4E4121CBB71D400178DFB = {
 						CreatedOnToolsVersion = 7.3;
@@ -3722,7 +3723,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -3741,13 +3742,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KBDAWM7T4E;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.maplibre.maplibregl;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.maplibregl";
 				PRODUCT_NAME = "MapLibre GL";
-				PROVISIONING_PROFILE_SPECIFIER = "MapLibre GL TestApp Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = RelWithDebInfo;
 		};
@@ -3797,7 +3800,18 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				INFOPLIST_FILE = framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(PROJECT_DIR)/../../build/ios/ArchiveIntermediates/dynamic/IntermediateBuildFilesPath/UninstalledProducts/iphoneos\"",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(PROJECT_DIR)/../../build/ios/ArchiveIntermediates/dynamic/IntermediateBuildFilesPath/UninstalledProducts/iphonesimulator\"",
+				);
 				LLVM_LTO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
@@ -3849,8 +3863,9 @@
 		96AF1AA821B615A3007CB696 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = "framework/Info-static.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
 				PRODUCT_NAME = Mapbox;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -4285,7 +4300,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4309,7 +4324,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4328,13 +4343,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KBDAWM7T4E;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.maplibre.maplibregl;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.maplibregl";
 				PRODUCT_NAME = "MapLibre GL";
-				PROVISIONING_PROFILE_SPECIFIER = "MapLibre GL TestApp Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -4345,13 +4362,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_LOCALIZABILITY_EMPTY_CONTEXT = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KBDAWM7T4E;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = app/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.maplibre.maplibregl;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.maplibregl";
 				PRODUCT_NAME = "MapLibre GL";
-				PROVISIONING_PROFILE_SPECIFIER = "MapLibre GL TestApp Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -4423,9 +4442,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15256;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
 				PRODUCT_NAME = Mapbox;
@@ -4446,10 +4471,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 15256;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
 				INFOPLIST_FILE = framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				LLVM_LTO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
@@ -4463,8 +4494,9 @@
 		DA8933D91CCD306400E68420 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = "framework/Info-static.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
 				PRODUCT_NAME = Mapbox;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -4474,8 +4506,9 @@
 		DA8933DA1CCD306400E68420 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2VT976F4CH;
 				INFOPLIST_FILE = "framework/Info-static.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
 				PRODUCT_NAME = Mapbox;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
