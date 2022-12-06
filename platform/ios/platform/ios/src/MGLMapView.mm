@@ -857,11 +857,16 @@ public:
     NSMutableArray *updatedConstraints = [NSMutableArray array];
     UIEdgeInsets inset = UIEdgeInsetsZero;
     
-    BOOL automaticallyAdjustContentInset = false;
+    BOOL automaticallyAdjustContentInset = FALSE;
     if (_automaticallyAdjustContentInsetHolder) {
         automaticallyAdjustContentInset = _automaticallyAdjustContentInsetHolder.boolValue;
+    } else {
+        if ([self.superview isKindOfClass:[UIScrollView class]]) {
+            UIScrollViewContentInsetAdjustmentBehavior behavior = [(UIScrollView *)self.superview contentInsetAdjustmentBehavior];
+            automaticallyAdjustContentInset = behavior != UIScrollViewContentInsetAdjustmentNever;
+        }
     }
-    
+
     if (! automaticallyAdjustContentInset) {
         inset = UIEdgeInsetsMake(self.contentInset.top - self.safeMapViewContentInsets.top,
                                  self.contentInset.left - self.safeMapViewContentInsets.left,
@@ -1092,6 +1097,11 @@ public:
     
     if (_automaticallyAdjustContentInsetHolder) {
         automaticallyAdjustContentInset = _automaticallyAdjustContentInsetHolder.boolValue;
+    } else {
+        if ([self.superview isKindOfClass:[UIScrollView class]]) {
+            UIScrollViewContentInsetAdjustmentBehavior behavior = [(UIScrollView *)self.superview contentInsetAdjustmentBehavior];
+            automaticallyAdjustContentInset = behavior != UIScrollViewContentInsetAdjustmentNever;
+        }
     }
     
     self.safeMapViewContentInsets = adjustedContentInsets;
@@ -3078,6 +3088,7 @@ static void *windowScreenContext = &windowScreenContext;
 //    UIViewController *viewController = self.mgl_viewControllerForLayoutGuides;
 //    if (viewController)
 //    {
+//
 //        CGFloat topInset = viewController.topLayoutGuide.length;
 //        frame.origin.y += topInset;
 //        frame.size.height -= topInset + viewController.bottomLayoutGuide.length;
