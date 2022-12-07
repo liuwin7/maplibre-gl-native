@@ -3813,10 +3813,13 @@
 					"\"$(PROJECT_DIR)/../../build/ios/ArchiveIntermediates/dynamic/IntermediateBuildFilesPath/UninstalledProducts/iphonesimulator\"",
 				);
 				LLVM_LTO = YES;
+				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
 				PRODUCT_NAME = Mapbox;
+				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
+				SYMROOT = "${inherited}";
 				VERSION_INFO_PREFIX = "__attribute__((visibility (\"default\"))) ";
 			};
 			name = RelWithDebInfo;
@@ -4451,10 +4454,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
 				PRODUCT_NAME = Mapbox;
+				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
+				SYMROOT = "${inherited}";
 				VERSION_INFO_PREFIX = "__attribute__((visibility (\"default\"))) ";
 			};
 			name = Debug;
@@ -4482,11 +4488,14 @@
 					"$(PROJECT_DIR)",
 				);
 				LLVM_LTO = YES;
+				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Mapbox;
 				PRODUCT_NAME = Mapbox;
+				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
+				SYMROOT = "${inherited}";
 				VERSION_INFO_PREFIX = "__attribute__((visibility (\"default\"))) ";
 			};
 			name = Release;
