@@ -72,6 +72,7 @@ xcodebuild \
     -workspace ./platform/ios/ios.xcworkspace \
     -archivePath ${BINOUT}/${NAME}-iphonesimulator.xcarchive \
     -scheme ${SCHEME} \
+    -destination "generic/platform=iOS Simulator" \
     -configuration ${BUILDTYPE} \
     -sdk iphonesimulator \
     -jobs ${JOBS} | tee ${LOG_PATH} | xcpretty
@@ -86,6 +87,7 @@ xcodebuild \
     -workspace ./platform/ios/ios.xcworkspace \
     -archivePath ${BINOUT}/${NAME}-iphoneos.xcarchive \
     -scheme ${SCHEME} \
+    -destination "generic/platform=iOS" \
     -configuration ${BUILDTYPE} \
     -sdk iphoneos \
     -jobs ${JOBS} | tee ${LOG_PATH} | xcpretty
