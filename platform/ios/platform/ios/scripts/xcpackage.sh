@@ -4,7 +4,7 @@ set -e
 set -o pipefail
 set -u
 
-NAME=Mapbox
+NAME=UniMap
 OUTPUT=build/ios/pkg
 DERIVED_DATA=build/ios
 PRODUCTS=${DERIVED_DATA}
@@ -90,7 +90,7 @@ xcodebuild \
     -sdk iphoneos \
     -jobs ${JOBS} | tee ${LOG_PATH} | xcpretty
 
-LIBS=(Mapbox.a)
+LIBS=(UniMap.a)
 
 function realpath {
     [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"

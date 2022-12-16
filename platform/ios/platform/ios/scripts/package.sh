@@ -4,7 +4,7 @@ set -e
 set -o pipefail
 set -u
 
-NAME=Mapbox
+NAME=UniMap
 OUTPUT=build/ios/pkg
 DERIVED_DATA=build/ios
 PRODUCTS=${DERIVED_DATA}
@@ -111,7 +111,7 @@ if [[ ${BUILD_FOR_DEVICE} == true ]]; then
         -jobs ${JOBS} | tee ${LOG_PATH} | xcpretty
 fi
 
-LIBS=(Mapbox.a)
+LIBS=(UniMap.a)
 
 
 function copyAndMakeFatFramework {
