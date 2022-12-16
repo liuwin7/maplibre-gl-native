@@ -380,9 +380,9 @@
 		CA0B3C022329DE9A00E4B493 /* MGLTestAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAA65D82321BBA900F08A39 /* MGLTestAssertionHandler.m */; };
 		CA0C27922076C804001CE5B7 /* MGLShapeSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0C27912076C804001CE5B7 /* MGLShapeSourceTests.m */; };
 		CA0C27942076CA19001CE5B7 /* MGLMapViewIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0C27932076CA19001CE5B7 /* MGLMapViewIntegrationTest.m */; };
-		CA0FAA05237B3BB700C9F3C9 /* UniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; };
-		CA0FAA07237B3BC600C9F3C9 /* UniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; };
-		CA0FAA09237B3BEA00C9F3C9 /* UniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; };
+		CA0FAA05237B3BB700C9F3C9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; };
+		CA0FAA07237B3BC600C9F3C9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; };
+		CA0FAA09237B3BEA00C9F3C9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; };
 		CA17464E23D8A93C008B7A43 /* MGLNetworkConfigurationIntegrationTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA17464D23D8A93C008B7A43 /* MGLNetworkConfigurationIntegrationTests.mm */; };
 		CA1B4A512099FB2200EDD491 /* MGLMapSnapshotterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1B4A502099FB2200EDD491 /* MGLMapSnapshotterTest.m */; };
 		CA4C54FE2324948100A81659 /* MGLSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4C54FD2324948100A81659 /* MGLSourceTests.swift */; };
@@ -401,8 +401,8 @@
 		CA86FF0E22D8D5A0009EB14A /* MGLNetworkConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA86FF0D22D8D5A0009EB14A /* MGLNetworkConfigurationTests.m */; };
 		CA88DC3021C85D900059ED5A /* MGLStyleURLIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA88DC2F21C85D900059ED5A /* MGLStyleURLIntegrationTest.m */; };
 		CA8FBC0921A47BB100D1203C /* MGLRendererConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8FBC0821A47BB100D1203C /* MGLRendererConfigurationTests.m */; };
-		CA94E5FB237D21030037AEA0 /* UniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; };
-		CA94E5FC237D21030037AEA0 /* UniMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA94E5FB237D21030037AEA0 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; };
+		CA94E5FC237D21030037AEA0 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAA69DA5206DCD0E007279CD /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA4A26961CB6E795000B7809 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAAA65D92321BBA900F08A39 /* MGLTestAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAA65D82321BBA900F08A39 /* MGLTestAssertionHandler.m */; };
 		CAB369E5237471D600592F74 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7839A3235E11FC00D4D606 /* libz.tbd */; };
@@ -567,8 +567,8 @@
 		DA89633A1CC549A100684375 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = DA8963361CC549A100684375 /* tiles */; };
 		DAA32CC31E4C6B65006F8D24 /* MGLDistanceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3557F7AF1E1D27D300CCA5E6 /* MGLDistanceFormatter.m */; };
 		DAA4227E2429771D008457DB /* MGLMapSnapshotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA4227D2429771D008457DB /* MGLMapSnapshotterTests.m */; };
-		DAA4E4081CBB6C9500178DFB /* UniMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; };
-		DAA4E4091CBB6C9500178DFB /* UniMap.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* UniMap.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAA4E4081CBB6C9500178DFB /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; };
+		DAA4E4091CBB6C9500178DFB /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAA4E41C1CBB730400178DFB /* MGLSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA8848001CBAFA6200AB86E3 /* MGLSettings.mm */; };
 		DAA4E41D1CBB730400178DFB /* MGLGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA8848021CBAFA6200AB86E3 /* MGLGeometry.mm */; };
 		DAA4E41E1CBB730400178DFB /* MGLMapCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA8848031CBAFA6200AB86E3 /* MGLMapCamera.mm */; };
@@ -741,7 +741,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CA94E5FC237D21030037AEA0 /* UniMap.framework in Embed Frameworks */,
+				CA94E5FC237D21030037AEA0 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,7 +763,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DAA4E4091CBB6C9500178DFB /* UniMap.framework in Embed Frameworks */,
+				DAA4E4091CBB6C9500178DFB /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1184,7 +1184,7 @@
 		DA80E9611FE84AEF0065FC9B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ar; path = ar.lproj/Foundation.stringsdict; sourceTree = "<group>"; };
 		DA821D041CCC6D59007508D4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA821D051CCC6D59007508D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DA8847D21CBAF91600AB86E3 /* UniMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8847D21CBAF91600AB86E3 /* Mapbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mapbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8847D61CBAF91600AB86E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8847DF1CBAFA5100AB86E3 /* MGLSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLSettings.h; sourceTree = "<group>"; };
 		DA8847E01CBAFA5100AB86E3 /* MGLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLAnnotation.h; sourceTree = "<group>"; };
@@ -1353,7 +1353,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0FAA07237B3BC600C9F3C9 /* UniMap.framework in Frameworks */,
+				CA0FAA07237B3BC600C9F3C9 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,7 +1361,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0FAA09237B3BEA00C9F3C9 /* UniMap.framework in Frameworks */,
+				CA0FAA09237B3BEA00C9F3C9 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1383,7 +1383,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA94E5FB237D21030037AEA0 /* UniMap.framework in Frameworks */,
+				CA94E5FB237D21030037AEA0 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1394,7 +1394,7 @@
 				DA35D9D52409925E0013ECB0 /* libsqlite3.tbd in Frameworks */,
 				DA35D9D6240992760013ECB0 /* libz.tbd in Frameworks */,
 				DA35D9D4240992400013ECB0 /* libmbgl-vendor-csscolorparser.a in Frameworks */,
-				CA0FAA05237B3BB700C9F3C9 /* UniMap.framework in Frameworks */,
+				CA0FAA05237B3BB700C9F3C9 /* Mapbox.framework in Frameworks */,
 				1F78399E235AA1E600D4D606 /* libmbgl-core.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1429,7 +1429,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA4E4081CBB6C9500178DFB /* UniMap.framework in Frameworks */,
+				DAA4E4081CBB6C9500178DFB /* Mapbox.framework in Frameworks */,
 				3E8770612074297100B7E842 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1801,7 +1801,7 @@
 			children = (
 				DA1DC94A1CB6C1C2006E619F /* MapLibre GL.app */,
 				DABCABA81CB80692000A7C39 /* Bench GL.app */,
-				DA8847D21CBAF91600AB86E3 /* UniMap.framework */,
+				DA8847D21CBAF91600AB86E3 /* Mapbox.framework */,
 				DAA4E4131CBB71D400178DFB /* libMapbox.a */,
 				DA2E88511CC036F400F24E7B /* test.xctest */,
 				DA8933D51CCD306400E68420 /* Mapbox.bundle */,
@@ -2720,7 +2720,7 @@
 			);
 			name = dynamic;
 			productName = framework;
-			productReference = DA8847D21CBAF91600AB86E3 /* UniMap.framework */;
+			productReference = DA8847D21CBAF91600AB86E3 /* Mapbox.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DA8933D41CCD306400E68420 /* bundle */ = {
@@ -3815,8 +3815,8 @@
 				LLVM_LTO = YES;
 				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.UniMap";
-				PRODUCT_NAME = UniMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
+				PRODUCT_NAME = Mapbox;
 				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
 				SYMROOT = "${inherited}";
@@ -4456,8 +4456,8 @@
 				);
 				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.UniMap";
-				PRODUCT_NAME = UniMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
+				PRODUCT_NAME = Mapbox;
 				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
 				SYMROOT = "${inherited}";
@@ -4490,8 +4490,8 @@
 				LLVM_LTO = YES;
 				OBJROOT = "${inherited}";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.UniMap";
-				PRODUCT_NAME = UniMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raymedy-china.Mapbox";
+				PRODUCT_NAME = Mapbox;
 				SHARED_PRECOMPS_DIR = "${inherited}";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
