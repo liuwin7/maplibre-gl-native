@@ -1,4 +1,4 @@
-#import "Mapbox.h"
+#import "UniMap.h"
 #import "MGLScaleBar.h"
 
 static const CGFloat MGLFeetPerMile = 5280;

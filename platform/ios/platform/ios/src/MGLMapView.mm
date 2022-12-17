@@ -26,7 +26,7 @@
 #include <mbgl/util/string.hpp>
 #include <mbgl/util/projection.hpp>
 
-#import "Mapbox.h"
+#import "UniMap.h"
 #import "MGLShape_Private.h"
 #import "MGLFeature_Private.h"
 #import "MGLGeometry_Private.h"
