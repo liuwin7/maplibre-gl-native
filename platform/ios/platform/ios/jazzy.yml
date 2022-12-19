@@ -1,4 +1,4 @@
-module: Mapbox
+module: UniMap
 author: Mapbox
 author_url: https://maplibre.org/
 github_url: https://github.com/maplibre/maplibre-gl-native
@@ -11,7 +11,7 @@ head: |
 objc: Yes
 skip_undocumented: Yes
 hide_documentation_coverage: Yes
-umbrella_header: src/Mapbox.h
+umbrella_header: src/UniMap.h
 framework_root: ../darwin/src
 
 custom_categories:
